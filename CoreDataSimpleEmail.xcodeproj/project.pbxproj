@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAA0987B267CB5F0001A6478 /* SentEmailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0987A267CB5F0001A6478 /* SentEmailsViewModel.swift */; };
+		EAA0987D267CB5FC001A6478 /* SentEmailsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0987C267CB5FC001A6478 /* SentEmailsDataSource.swift */; };
+		EAA09883267CB62A001A6478 /* SentEmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA09881267CB62A001A6478 /* SentEmailCell.swift */; };
+		EAA09884267CB62A001A6478 /* SentEmailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA09882267CB62A001A6478 /* SentEmailCell.xib */; };
+		EAC84DA4267C8D5F003F6205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DA3267C8D5F003F6205 /* AppDelegate.swift */; };
+		EAC84DA6267C8D5F003F6205 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DA5267C8D5F003F6205 /* SceneDelegate.swift */; };
+		EAC84DAE267C8D5F003F6205 /* CoreDataSimpleEmail.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DAC267C8D5F003F6205 /* CoreDataSimpleEmail.xcdatamodeld */; };
+		EAC84DB0267C8D5F003F6205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC84DAF267C8D5F003F6205 /* Assets.xcassets */; };
+		EAC84DB3267C8D5F003F6205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC84DB1267C8D5F003F6205 /* LaunchScreen.storyboard */; };
+		EAC84DBD267C8DED003F6205 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DBC267C8DED003F6205 /* CoreDataManager.swift */; };
+		EAC84DC1267C9105003F6205 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DC0267C9105003F6205 /* WelcomeViewController.swift */; };
+		EAC84DC3267C918C003F6205 /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC84DC2267C918C003F6205 /* WelcomeViewController.storyboard */; };
+		EAC84DC7267C92CA003F6205 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DC6267C92CA003F6205 /* LoginViewController.swift */; };
+		EAC84DC9267C92D8003F6205 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC84DC8267C92D8003F6205 /* LoginViewController.storyboard */; };
+		EAC84DCB267C92E4003F6205 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DCA267C92E4003F6205 /* SignUpViewController.swift */; };
+		EAC84DCD267C92F1003F6205 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC84DCC267C92F1003F6205 /* SignUpViewController.storyboard */; };
+		EAC84DD0267C9492003F6205 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DCF267C9492003F6205 /* Constants.swift */; };
+		EAC84DD3267CA4C6003F6205 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DD2267CA4C6003F6205 /* EmailViewController.swift */; };
+		EAC84DD5267CA4F2003F6205 /* EmailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC84DD4267CA4F2003F6205 /* EmailViewController.storyboard */; };
+		EAC84DD8267CAA68003F6205 /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DD7267CAA68003F6205 /* EmailViewModel.swift */; };
+		EAC84DDA267CAA76003F6205 /* EmailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DD9267CAA76003F6205 /* EmailDataSource.swift */; };
+		EAC84DDF267CAAC1003F6205 /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DDD267CAAC1003F6205 /* EmailCell.swift */; };
+		EAC84DE0267CAAC1003F6205 /* EmailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC84DDE267CAAC1003F6205 /* EmailCell.xib */; };
+		EAC84DE3267CAD71003F6205 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DE2267CAD71003F6205 /* UITableView+Extension.swift */; };
+		EAC84DE5267CAD7F003F6205 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DE4267CAD7F003F6205 /* UITableViewCell+Extension.swift */; };
+		EAC84DE8267CB257003F6205 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DE7267CB257003F6205 /* ComposeViewController.swift */; };
+		EAC84DEA267CB260003F6205 /* ComposeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC84DE9267CB260003F6205 /* ComposeViewController.storyboard */; };
+		EAC84DED267CB4EF003F6205 /* SentEmailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC84DEC267CB4EF003F6205 /* SentEmailsViewController.swift */; };
+		EAC84DEF267CB4FE003F6205 /* SentEmailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC84DEE267CB4FE003F6205 /* SentEmailsViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EAA0987A267CB5F0001A6478 /* SentEmailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentEmailsViewModel.swift; sourceTree = "<group>"; };
+		EAA0987C267CB5FC001A6478 /* SentEmailsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentEmailsDataSource.swift; sourceTree = "<group>"; };
+		EAA09881267CB62A001A6478 /* SentEmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentEmailCell.swift; sourceTree = "<group>"; };
+		EAA09882267CB62A001A6478 /* SentEmailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentEmailCell.xib; sourceTree = "<group>"; };
+		EAC84DA0267C8D5F003F6205 /* CoreDataSimpleEmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSimpleEmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC84DA3267C8D5F003F6205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAC84DA5267C8D5F003F6205 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EAC84DAD267C8D5F003F6205 /* CoreDataSimpleEmail.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataSimpleEmail.xcdatamodel; sourceTree = "<group>"; };
+		EAC84DAF267C8D5F003F6205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAC84DB2267C8D5F003F6205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAC84DB4267C8D5F003F6205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC84DBC267C8DED003F6205 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		EAC84DC0267C9105003F6205 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		EAC84DC2267C918C003F6205 /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
+		EAC84DC6267C92CA003F6205 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EAC84DC8267C92D8003F6205 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		EAC84DCA267C92E4003F6205 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EAC84DCC267C92F1003F6205 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
+		EAC84DCF267C9492003F6205 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EAC84DD2267CA4C6003F6205 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		EAC84DD4267CA4F2003F6205 /* EmailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmailViewController.storyboard; sourceTree = "<group>"; };
+		EAC84DD7267CAA68003F6205 /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
+		EAC84DD9267CAA76003F6205 /* EmailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDataSource.swift; sourceTree = "<group>"; };
+		EAC84DDD267CAAC1003F6205 /* EmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
+		EAC84DDE267CAAC1003F6205 /* EmailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailCell.xib; sourceTree = "<group>"; };
+		EAC84DE2267CAD71003F6205 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		EAC84DE4267CAD7F003F6205 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		EAC84DE7267CB257003F6205 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		EAC84DE9267CB260003F6205 /* ComposeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComposeViewController.storyboard; sourceTree = "<group>"; };
+		EAC84DEC267CB4EF003F6205 /* SentEmailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentEmailsViewController.swift; sourceTree = "<group>"; };
+		EAC84DEE267CB4FE003F6205 /* SentEmailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SentEmailsViewController.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAC84D9D267C8D5F003F6205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAA0987E267CB601001A6478 /* SentEmailCell */ = {
+			isa = PBXGroup;
+			children = (
+				EAA09881267CB62A001A6478 /* SentEmailCell.swift */,
+				EAA09882267CB62A001A6478 /* SentEmailCell.xib */,
+			);
+			path = SentEmailCell;
+			sourceTree = "<group>";
+		};
+		EAC84D97267C8D5E003F6205 = {
+			isa = PBXGroup;
+			children = (
+				EAC84DA2267C8D5F003F6205 /* CoreDataSimpleEmail */,
+				EAC84DA1267C8D5F003F6205 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAC84DA1267C8D5F003F6205 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DA0267C8D5F003F6205 /* CoreDataSimpleEmail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAC84DA2267C8D5F003F6205 /* CoreDataSimpleEmail */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DBE267C90E5003F6205 /* Presentation */,
+				EAC84DBA267C8DBB003F6205 /* Infrastructure */,
+				EAC84DA3267C8D5F003F6205 /* AppDelegate.swift */,
+				EAC84DA5267C8D5F003F6205 /* SceneDelegate.swift */,
+				EAC84DAF267C8D5F003F6205 /* Assets.xcassets */,
+				EAC84DB1267C8D5F003F6205 /* LaunchScreen.storyboard */,
+				EAC84DB4267C8D5F003F6205 /* Info.plist */,
+				EAC84DAC267C8D5F003F6205 /* CoreDataSimpleEmail.xcdatamodeld */,
+			);
+			path = CoreDataSimpleEmail;
+			sourceTree = "<group>";
+		};
+		EAC84DBA267C8DBB003F6205 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DE1267CAD3B003F6205 /* Extensions */,
+				EAC84DCE267C9481003F6205 /* Helpers */,
+				EAC84DBB267C8DC4003F6205 /* Managers */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		EAC84DBB267C8DC4003F6205 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DBC267C8DED003F6205 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EAC84DBE267C90E5003F6205 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DEB267CB4C0003F6205 /* SentEmailsScene */,
+				EAC84DE6267CB1E8003F6205 /* ComposeEmail */,
+				EAC84DD1267CA4B3003F6205 /* EmailScene */,
+				EAC84DC5267C92B3003F6205 /* SignUpScene */,
+				EAC84DC4267C92AC003F6205 /* LoginScene */,
+				EAC84DBF267C90EC003F6205 /* WelcomeScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EAC84DBF267C90EC003F6205 /* WelcomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DC0267C9105003F6205 /* WelcomeViewController.swift */,
+				EAC84DC2267C918C003F6205 /* WelcomeViewController.storyboard */,
+			);
+			path = WelcomeScene;
+			sourceTree = "<group>";
+		};
+		EAC84DC4267C92AC003F6205 /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DC6267C92CA003F6205 /* LoginViewController.swift */,
+				EAC84DC8267C92D8003F6205 /* LoginViewController.storyboard */,
+			);
+			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		EAC84DC5267C92B3003F6205 /* SignUpScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DCA267C92E4003F6205 /* SignUpViewController.swift */,
+				EAC84DCC267C92F1003F6205 /* SignUpViewController.storyboard */,
+			);
+			path = SignUpScene;
+			sourceTree = "<group>";
+		};
+		EAC84DCE267C9481003F6205 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DCF267C9492003F6205 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EAC84DD1267CA4B3003F6205 /* EmailScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DDC267CAAAB003F6205 /* EmailCell */,
+				EAC84DDB267CAA96003F6205 /* View */,
+				EAC84DD6267CAA59003F6205 /* ViewModel */,
+			);
+			path = EmailScene;
+			sourceTree = "<group>";
+		};
+		EAC84DD6267CAA59003F6205 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DD7267CAA68003F6205 /* EmailViewModel.swift */,
+				EAC84DD9267CAA76003F6205 /* EmailDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EAC84DDB267CAA96003F6205 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DD4267CA4F2003F6205 /* EmailViewController.storyboard */,
+				EAC84DD2267CA4C6003F6205 /* EmailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAC84DDC267CAAAB003F6205 /* EmailCell */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DDD267CAAC1003F6205 /* EmailCell.swift */,
+				EAC84DDE267CAAC1003F6205 /* EmailCell.xib */,
+			);
+			path = EmailCell;
+			sourceTree = "<group>";
+		};
+		EAC84DE1267CAD3B003F6205 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DE2267CAD71003F6205 /* UITableView+Extension.swift */,
+				EAC84DE4267CAD7F003F6205 /* UITableViewCell+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EAC84DE6267CB1E8003F6205 /* ComposeEmail */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DE7267CB257003F6205 /* ComposeViewController.swift */,
+				EAC84DE9267CB260003F6205 /* ComposeViewController.storyboard */,
+			);
+			path = ComposeEmail;
+			sourceTree = "<group>";
+		};
+		EAC84DEB267CB4C0003F6205 /* SentEmailsScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0987E267CB601001A6478 /* SentEmailCell */,
+				EAC84DF1267CB574003F6205 /* ViewModel */,
+				EAC84DF0267CB56B003F6205 /* View */,
+			);
+			path = SentEmailsScene;
+			sourceTree = "<group>";
+		};
+		EAC84DF0267CB56B003F6205 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAC84DEE267CB4FE003F6205 /* SentEmailsViewController.storyboard */,
+				EAC84DEC267CB4EF003F6205 /* SentEmailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAC84DF1267CB574003F6205 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0987A267CB5F0001A6478 /* SentEmailsViewModel.swift */,
+				EAA0987C267CB5FC001A6478 /* SentEmailsDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAC84D9F267C8D5F003F6205 /* CoreDataSimpleEmail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC84DB7267C8D5F003F6205 /* Build configuration list for PBXNativeTarget "CoreDataSimpleEmail" */;
+			buildPhases = (
+				EAC84D9C267C8D5F003F6205 /* Sources */,
+				EAC84D9D267C8D5F003F6205 /* Frameworks */,
+				EAC84D9E267C8D5F003F6205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataSimpleEmail;
+			productName = CoreDataSimpleEmail;
+			productReference = EAC84DA0267C8D5F003F6205 /* CoreDataSimpleEmail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAC84D98267C8D5E003F6205 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EAC84D9F267C8D5F003F6205 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = EAC84D9B267C8D5E003F6205 /* Build configuration list for PBXProject "CoreDataSimpleEmail" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAC84D97267C8D5E003F6205;
+			productRefGroup = EAC84DA1267C8D5F003F6205 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAC84D9F267C8D5F003F6205 /* CoreDataSimpleEmail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAC84D9E267C8D5F003F6205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC84DEA267CB260003F6205 /* ComposeViewController.storyboard in Resources */,
+				EAC84DC3267C918C003F6205 /* WelcomeViewController.storyboard in Resources */,
+				EAC84DE0267CAAC1003F6205 /* EmailCell.xib in Resources */,
+				EAC84DB3267C8D5F003F6205 /* LaunchScreen.storyboard in Resources */,
+				EAC84DD5267CA4F2003F6205 /* EmailViewController.storyboard in Resources */,
+				EAC84DC9267C92D8003F6205 /* LoginViewController.storyboard in Resources */,
+				EAC84DB0267C8D5F003F6205 /* Assets.xcassets in Resources */,
+				EAC84DEF267CB4FE003F6205 /* SentEmailsViewController.storyboard in Resources */,
+				EAA09884267CB62A001A6478 /* SentEmailCell.xib in Resources */,
+				EAC84DCD267C92F1003F6205 /* SignUpViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAC84D9C267C8D5F003F6205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC84DE8267CB257003F6205 /* ComposeViewController.swift in Sources */,
+				EAC84DC7267C92CA003F6205 /* LoginViewController.swift in Sources */,
+				EAC84DD8267CAA68003F6205 /* EmailViewModel.swift in Sources */,
+				EAC84DD3267CA4C6003F6205 /* EmailViewController.swift in Sources */,
+				EAA0987B267CB5F0001A6478 /* SentEmailsViewModel.swift in Sources */,
+				EAC84DCB267C92E4003F6205 /* SignUpViewController.swift in Sources */,
+				EAC84DA4267C8D5F003F6205 /* AppDelegate.swift in Sources */,
+				EAC84DAE267C8D5F003F6205 /* CoreDataSimpleEmail.xcdatamodeld in Sources */,
+				EAC84DC1267C9105003F6205 /* WelcomeViewController.swift in Sources */,
+				EAC84DE5267CAD7F003F6205 /* UITableViewCell+Extension.swift in Sources */,
+				EAC84DDA267CAA76003F6205 /* EmailDataSource.swift in Sources */,
+				EAC84DBD267C8DED003F6205 /* CoreDataManager.swift in Sources */,
+				EAC84DA6267C8D5F003F6205 /* SceneDelegate.swift in Sources */,
+				EAC84DDF267CAAC1003F6205 /* EmailCell.swift in Sources */,
+				EAA09883267CB62A001A6478 /* SentEmailCell.swift in Sources */,
+				EAC84DED267CB4EF003F6205 /* SentEmailsViewController.swift in Sources */,
+				EAC84DD0267C9492003F6205 /* Constants.swift in Sources */,
+				EAC84DE3267CAD71003F6205 /* UITableView+Extension.swift in Sources */,
+				EAA0987D267CB5FC001A6478 /* SentEmailsDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAC84DB1267C8D5F003F6205 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC84DB2267C8D5F003F6205 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAC84DB5267C8D5F003F6205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAC84DB6267C8D5F003F6205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAC84DB8267C8D5F003F6205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreDataSimpleEmail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GiorgiMeskhi.CoreDataSimpleEmail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAC84DB9267C8D5F003F6205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreDataSimpleEmail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GiorgiMeskhi.CoreDataSimpleEmail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAC84D9B267C8D5E003F6205 /* Build configuration list for PBXProject "CoreDataSimpleEmail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC84DB5267C8D5F003F6205 /* Debug */,
+				EAC84DB6267C8D5F003F6205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC84DB7267C8D5F003F6205 /* Build configuration list for PBXNativeTarget "CoreDataSimpleEmail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC84DB8267C8D5F003F6205 /* Debug */,
+				EAC84DB9267C8D5F003F6205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EAC84DAC267C8D5F003F6205 /* CoreDataSimpleEmail.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAC84DAD267C8D5F003F6205 /* CoreDataSimpleEmail.xcdatamodel */,
+			);
+			currentVersion = EAC84DAD267C8D5F003F6205 /* CoreDataSimpleEmail.xcdatamodel */;
+			path = CoreDataSimpleEmail.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EAC84D98267C8D5E003F6205 /* Project object */;
+}
